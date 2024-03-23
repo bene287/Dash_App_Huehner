@@ -98,3 +98,5 @@ def update_chart(selected_days):
 # Dash-App starten
 if __name__ == '__main__':
     app.run_server(debug=True)
+
+server = app.server
