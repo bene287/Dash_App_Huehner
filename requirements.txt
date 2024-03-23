@@ -1,5 +1,4 @@
 dash==2.15.0
 plotly
-random
 numpy
 gunicorn
