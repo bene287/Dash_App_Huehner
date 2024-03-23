@@ -61,6 +61,7 @@ fig_7.update_layout(title_text="Eieranzahl über 7 Tage",
 
 # Dash-App erstellen
 app = dash.Dash(__name__)
+server = app.server
 
 # Layout der Dash-App
 app.layout = html.Div([
@@ -99,4 +100,3 @@ def update_chart(selected_days):
 if __name__ == '__main__':
     app.run_server(debug=True)
 
-server = app.server
