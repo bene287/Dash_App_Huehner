@@ -4,16 +4,15 @@ from dash import html
 from dash.dependencies import Input, Output
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import random
 import numpy as np
 
 # Generiere fiktive Daten für die Eieranzahl
 tage_30 = list(range(1, 31))
 tage_90 = list(range(1, 91))
 tage_7 = list(range(1, 8))
-eieranzahl_30 = [random.randint(20, 40) for _ in range(30)]
-eieranzahl_90 = [random.randint(20, 40) for _ in range(90)]
-eieranzahl_7 = [random.randint(20, 40) for _ in range(7)]
+eieranzahl_30 = [26, 36, 18, 38, 24, 33, 17, 39, 22, 41, 21, 43, 19, 40, 16, 30, 23, 42, 27, 34, 20, 37, 25, 44, 15, 32, 31, 45, 29, 35]
+eieranzahl_90 = [42, 31, 26, 28, 35, 39, 19, 40, 29, 25, 30, 24, 23, 16, 37, 22, 33, 18, 21, 43, 15, 38, 44, 20, 41, 34, 27, 36, 32, 17, 42, 23, 26, 15, 30, 19, 45, 28, 35, 24, 39, 44, 16, 32, 31, 20, 34, 40, 38, 22, 33, 37, 21, 41, 27, 36, 18, 43, 25, 29, 17, 45, 42, 28, 33, 16, 39, 19, 20, 41, 31, 44, 23, 30, 38, 35, 15, 37, 24, 22, 36, 32, 43, 21, 34, 18, 25]
+eieranzahl_7 = [28, 33, 19, 41, 22, 38, 17]
 eieranzahl_mean_30 = [np.mean(eieranzahl_30)] * len(eieranzahl_30)
 eieranzahl_mean_90 = [np.mean(eieranzahl_90)] * len(eieranzahl_90)
 eieranzahl_mean_7 = [np.mean(eieranzahl_7)] * len(eieranzahl_7)
